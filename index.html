@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Engineering Portfolio - Cormac McQuillan</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <div class="branding">
+        <h1>Engineering Portfolio</h1>
+        <p class="subtitle">Cormac McQuillan</p>
+      </div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero / Intro Section -->
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <h2>Engineering Projects & Experience</h2>
+          <p>
+            A growing collection of engineering projects that build practical skills,
+            deepen understanding, and connect classroom concepts to real-world engineering
+            experience.
+          </p>
+        </div>
+        <div class="hero-photo">
+          <div class="headshot-frame">
+            <img
+              src="images/headshot.jpg"
+              alt="Headshot of Cormac McQuillan"
+              id="headshot"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About / Bio Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+        <p class="bio-text">
+          I am a civil engineering student at Oregon State University. My work focuses on
+          understanding how real materials and systems behave by building small-scale
+          setups and collecting data from those setups. I’m especially interested in
+          structural behavior, construction practices, and the concepts that we base our
+          infrastructure and cities around.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <h2>Projects</h2>
+
+        <article class="project-card">
+          <header class="project-header">
+            <h3>Solar-Powered Battery Charger</h3>
+            <p class="project-tagline">
+              First-year electrical engineering project that introduced me to embedded
+              hardware, power management, and practical prototyping.
+            </p>
+          </header>
+
+          <div class="project-layout">
+            <div class="project-description">
+              <h4>Project Overview</h4>
+              <p>
+                This project implements a small solar-powered system that can charge a
+                rechargeable battery and report key electrical values. The main goal was to
+                design and assemble a complete hardware setup that takes energy from a
+                solar panel, manages it safely, stores it in a battery, and displays what
+                is happening in real time on an LCD screen.
+              </p>
+
+              <div class="project-specs">
+                <h4>What the System Includes</h4>
+                <ul>
+                  <li>Microcontroller board that coordinates measurements and drives the display.</li>
+                  <li>INA219 measurement board for reading panel and load voltage and current.</li>
+                  <li>Charge controller to safely charge a 3.7 V, 1200 mAh battery.</li>
+                  <li>Character LCD that shows system status and measured values.</li>
+                  <li>6 V solar panel as the primary energy source.</li>
+                  <li>Breadboard-based wiring to connect and prototype all components together.</li>
+                </ul>
+              </div>
+
+              <div class="project-skills">
+                <h4>Engineering Skills Learned</h4>
+                <ul>
+                  <li>Writing and structuring microcontroller firmware to coordinate sensors and outputs.</li>
+                  <li>Configuring I²C communication between the microcontroller and the INA219 measurement board.</li>
+                  <li>Driving a character LCD, updating text based on live measurements and system state.</li>
+                  <li>Implementing basic control logic for charging modes and status messages.</li>
+                  <li>Debugging embedded code and hardware together using serial output and targeted test cases.</li>
+                  <li>Writing CircuitPython code to implement the logic that ties together sensor readings, charging behavior, and LCD updates.</li>
+                  <li>Translating engineering requirements into clear, testable behavior in code.</li>
+                </ul>
+              </div>
+
+              <figure class="project-figure">
+                <img
+                  src="images/solar-breadboard-closeup.jpg"
+                  alt="Close-up of the breadboard wiring and components"
+                />
+                <figcaption>
+                  Close-up of the breadboard wiring, including the microcontroller,
+                  measurement board, and charge controller that manage and monitor the
+                  solar charging process.
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="project-media">
+              <h4>Project Photos</h4>
+
+              <figure class="project-figure">
+                <img
+                  src="images/solar-setup-overview.jpg"
+                  alt="Overall view of the solar panel, breadboard circuit, and battery"
+                />
+                <figcaption>
+                  Overall setup showing the 6 V solar panel, breadboard circuit, charge
+                  controller, microcontroller, battery, and LCD working together as a
+                  complete system.
+                </figcaption>
+              </figure>
+
+              <figure class="project-figure">
+                <img
+                  src="images/solar-lcd-limited-sunlight.jpg"
+                  alt="LCD displaying system status and panel voltage under limited sunlight"
+                />
+                <figcaption>
+                  LCD display indicating a limited sunlight condition and reporting the
+                  panel voltage, demonstrating that the system is actively measuring and
+                  reacting to real operating conditions.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <div class="contact-grid">
+          <div class="contact-item">
+            <h3>Email</h3>
+            <p>
+              <a href="mailto:corm9098@gmail.com">corm9098@gmail.com</a><br />
+              <a href="mailto:mcquillc@oregonstate.edu">mcquillc@oregonstate.edu</a>
+            </p>
+          </div>
+          <div class="contact-item">
+            <h3>Phone</h3>
+            <p><a href="tel:+15412860172">541-286-0172</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Cormac McQuillan. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Set current year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
