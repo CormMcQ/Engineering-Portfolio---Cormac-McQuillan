@@ -1,0 +1,20 @@
+{
+  "name": "cormac-mcquillan-engineering-portfolio",
+  "version": "1.0.0",
+  "description": "A single-page engineering portfolio site for showcasing projects such as a Solar Battery Charger.",
+  "private": true,
+  "scripts": {
+    "start": "npx serve .",
+    "preview": "npx serve ."
+  },
+  "keywords": [
+    "portfolio",
+    "engineering",
+    "solar-battery-charger",
+    "cormac-mcquillan"
+  ],
+  "author": "Cormac McQuillan",
+  "license": "MIT",
+  "dependencies": {}
+}
+
